@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table layout</title>
+</head>
+<style>
+    
+   table{
+    border-collapse: collapse;
+    width: 50%;
+    margin: 20px;
+   }
+   thead{
+    background-color: rgb(6, 97, 201);
+   }
+   th,td{
+    border: 1px solid white;
+    padding: 8px;
+    text-align: center;
+   }
+   .even
+   {
+    background-color: aqua;
+   }
+   .odd
+   {
+    background-color: #d9edf7;
+   }
+</style>
+<body>
+    <table id = "table" border = "1">
+        <thead>
+            <tr>
+                <th>S.N </th>
+                <th>Name</th>
+                <th>Image</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <script>
+        let table = document.getElementById("table").getElementsByTagName('tbody')[0]
+
+
+        //Create table row dynammically
+        
+        
+
+        for(let i = 1; i <= 4; i++ )
+    {
+        let row = table.insertRow();
+        let cell1 = row.insertCell();
+        let cell2 = row.insertCell();
+        let cell3 = row.insertCell();
+         
+        cell1.innerText = i;
+        cell2.innerText = `Name: ${i}`;
+        cell3.innerText = `${i}.jpg`;
+
+        row.className = (i%2  === 0)? "even":"odd";
+
+
+    }
+    </script>
+    
+</body>
+</html>

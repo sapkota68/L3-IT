@@ -1,0 +1,40 @@
+<!--3.	WAP to show the use if …. Else if …. else for following conditions:
+a.	For marks > = 80 and marks <=100, show Distinction
+b.	For marks >=60 and marks < 80, show First Division
+c.	For marks >=50 and marks < 60, show Second Division
+d.	For marks >=40 and marks <50, show Third Division
+e.	For marks < 40, show Fail
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If else condition</title>
+</head>
+<body>
+    <script>
+        let marks = Number(prompt("Enter the marks of student:")); //Convert input to number
+        if (marks >= 80 && marks <= 100)
+        {
+            document.write("Distinction")
+        }
+        else if(marks >= 60 && marks < 80)
+        {
+            document.write("First Division")
+        }
+        else if(marks >=40 && marks < 60)
+        {
+            document.write("Second Divsion")
+        }
+        else
+        {
+            document.write("Fail")
+        }
+
+        
+
+    </script>
+</body>
+</html>

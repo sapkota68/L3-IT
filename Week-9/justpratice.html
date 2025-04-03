@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Table</title>
+    <style>
+        .row {
+            display: flex;
+        }
+        .cell {
+            padding: 8px;
+            border: 1px solid #ddd;
+            flex: 1;
+            text-align: center;
+        }
+        .header {
+            font-weight: bold;
+            background-color: #f2f2f2;
+        }
+        .merged-col
+        {
+            flex:2;
+        }
+
+        .merged-row
+        {
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="row header">
+        <div class="cell">Column 1</div>
+        <div class="cell">Column 2</div>
+        <div class="cell">Column 3</div>
+    </div>
+
+    <div class="row merged-row">
+        <div class="cell">
+            A numbered list:
+            <ol>
+                <li>Able</li>
+                <li>Baker</li>
+                <li>Charlie</li>
+                <li>Delta</li>
+                <li>Echo</li>
+            </ol>
+    </div>
+
+    
+
+    <div class="row">
+        <div class="cell">B</div>
+        <div class="cell merged-col">30</div>
+       
+    </div>
+
+    <div class="row">
+        <div class="cell">Bob</div>
+        <div class="cell">22</div>
+        <div class="cell">Berlin</div>
+    </div>
+</body>
+</html>
